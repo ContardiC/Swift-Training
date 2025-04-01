@@ -8,3 +8,11 @@ let isEven: (Int) -> Bool = {
 }
 
 print(isEven(5))
+
+// EX 2
+
+let strLength : (String) -> Int = { str in
+   return str.count
+}
+
+print(strLength("Hello Swift!"))
