@@ -1,4 +1,4 @@
-// ex 1
+// EX 1
 let isEven: (Int) -> Bool = {
     a in 
     if a % 2 == 0{
@@ -59,3 +59,25 @@ let filterOddNumbers : ([Int]) -> [Int] = {
 }
 
 print(filterOddNumbers([2,3,4,5,6,7]))
+
+// EX 7
+
+let reverseString : (String) -> String = {
+    str in 
+    let revStr = String(str.reversed())
+    return revStr
+}
+print(reverseString("Ciao Mondo!"))
+
+// EX 8
+
+let factorial : (Int) -> Int = { n in 
+    var factorial: Int = 1
+    for i in stride(from: n, through: 1, by: -1){
+        factorial *= i
+    }
+    return factorial
+}
+print(factorial(4))
+
+// EX 9
