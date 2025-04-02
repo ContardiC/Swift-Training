@@ -16,3 +16,23 @@ let strLength : (String) -> Int = { str in
 }
 
 print(strLength("Hello Swift!"))
+
+// EX 3
+
+let maxValue: (Int, Int) -> Int = { a, b in a > b ?  a :  b}
+
+print(maxValue(8,25))
+
+// EX 4
+
+/*
+Formula: °F = °C * 9/5 + 32
+*/
+
+let celsiusToFahrenheit : (Double) -> Double = {
+    temp in return (temp * (9/5)) + 32
+}
+
+print(celsiusToFahrenheit(0))
+
+// EX 5:
